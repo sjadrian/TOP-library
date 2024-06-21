@@ -21,6 +21,8 @@ body {
 
 .header {
     background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
 }
 
 .header .container {
@@ -35,7 +37,6 @@ body {
 
 .main {
     padding: 20px 100px;
-    margin-top: 20px;
 }
 
 #add-button {
@@ -56,9 +57,9 @@ body {
 
 .book-container {
     margin-top: 20px;
-    border: red 1px solid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
     row-gap: 40px;
 
     justify-content: space-evenly;
@@ -69,20 +70,22 @@ body {
 
 .book {
     background-color: white;
-    padding: 20px;
+    padding: 30px 20px;
     width: 400px;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     font-size: 24px;
+    border-radius: 12px;
 }
 
 .read, .remove {
     padding: 10px 20px;
     font-size: 20px;
+    border-radius: 12px;
 }
 
 .green, #bookSubmitButton {
@@ -120,7 +123,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.7) ;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
@@ -161,6 +164,7 @@ input[type="number"] {
 #bookSubmitButton {
     padding: 20px;
     font-size: 18px;
+    border-radius: 12px;
 }
 
 .footer h3{

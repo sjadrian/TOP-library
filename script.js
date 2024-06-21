@@ -149,12 +149,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const book1 = new Book("tom", "1", 10, true);
-    const book2 = new Book("dar", "132", 123, false);
-    const book3 = new Book("dar", "132", 123, false);
+    const book1 = new Book("Pride and Prejudice", "Jane Austen", 448, true);
+    const book2 = new Book("To Kill a Mockingbird", "Harper Lee", 336, false);
     myLibrary.push(book1);
     myLibrary.push(book2);
-    myLibrary.push(book3);
+
     console.log("myLibrary length: " + myLibrary.length);
     console.log("added books");
 
