@@ -1,12 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     var myLibrary = [];
 
-    function Book(title, author, pages, read) {
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-        this.read = read;
-        this.info = `${title} by ${author}, ${pages} pages, ${read}`;
+    // using constructor
+    // function Book(title, author, pages, read) {
+    //     this.title = title;
+    //     this.author = author;
+    //     this.pages = pages;
+    //     this.read = read;
+    //     this.info = `${title} by ${author}, ${pages} pages, ${read}`;
+    // }
+
+    // using class
+    class Book {
+        constructor(title, author, pages, read) {
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+            this.read = read;
+            this.info = `${title} by ${author}, ${pages} pages, ${read}`;
+        }
     }
 
     function addBookToLibrary() {
