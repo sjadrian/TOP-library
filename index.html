@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOP Library</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="overlay" id="overlay"></div>
 
     <div class="dialogWindow" id="dialogWindow">
-        <dialog id="myDialog">
-            <form action="" id="bookSubmitForm">
-                <div class="formContainer">
-                    <h3> Add new book</h3>
-                    <input type="text" name="title" id="title" placeholder="Title" required>     
-                    <input type="text" name="author" id="author" placeholder="Author" required> 
-                    <input type="number" name="pages" id="pages" min="1" placeholder="Pages" required> 
-                    <div id="readContainer">
-                        <label for="read">Have you read it?</label>
-                        <input type="checkbox" name="read" id="read">     
-                    </div>
-                    <input type="submit" id="bookSubmitButton">
-                </div>
-            </form>
-        </dialog>
+      <dialog id="myDialog">
+        <form action="" id="bookSubmitForm">
+          <div class="formContainer">
+            <h3>Add new book</h3>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Title"
+              required
+            />
+            <input
+              type="text"
+              name="author"
+              id="author"
+              placeholder="Author"
+              required
+            />
+            <input
+              type="number"
+              name="pages"
+              id="pages"
+              min="1"
+              placeholder="Pages"
+              required
+            />
+            <div id="readContainer">
+              <label for="read">Have you read it?</label>
+              <input type="checkbox" name="read" id="read" />
+            </div>
+            <input type="submit" id="bookSubmitButton" />
+          </div>
+        </form>
+      </dialog>
     </div>
 
-    <div class="header"> 
-        <div class="container">
-            <h1>library</h1> 
-        </div>
+    <div class="header">
+      <div class="container">
+        <h1>library</h1>
+      </div>
     </div>
 
     <div class="main">
-        <button id="add-button">
-            + Add Book
-        </button>
+      <button id="add-button">+ Add Book</button>
 
-        <div class="book-container">
-            
-        </div>
+      <div class="book-container"></div>
     </div>
 
     <div class="footer">
-        <h3>Copyright © 2024 sjadrian </h3>
+      <h3>Copyright © 2024 sjadrian</h3>
     </div>
-</body>
+  </body>
 </html>
